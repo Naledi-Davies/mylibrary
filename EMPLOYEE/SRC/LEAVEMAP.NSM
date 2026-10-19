@@ -1,0 +1,72 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     #DUE #END #LEFT #PERSON-ID #START #TAKEN
+0004DEFINE DATA PARAMETER
+00051 #DUE (N02.0)
+00061 #END (A008)
+00071 #LEFT (B004)
+00081 #PERSON-ID (A008)
+00091 #START (A008)
+00101 #TAKEN (N02.0)
+0011END-DEFINE
+0012FORMAT PS=024 LS=080 ZP=OFF SG=OFF KD=OFF IP=OFF
+0013* MAP2: MAP PROFILES *****************************        200***********
+0014* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(                       *
+0015* 024079        N0NNUCN             X ^      01 SYSPROF NR             *
+0016************************************************************************
+0017INPUT          (     IP=OFF                                           /*
+0018                                                                       )
+0019 001T *PROGRAM /*.01S011 A008 .
+0020      (AD=ODT AL=011 )
+0021 014T 'BOOK LEAVE '
+0022 025T *DATN /*.01S008 N08.0.
+0023      (AD=ODT )
+0024 034T *TIME /*.01S008 A010 .
+0025      (AD=ODT AL=008 )
+0026/
+0027 001T '*' (071)
+0028/
+0029 001T 'PERSONNEL-ID:'
+0030 014T #PERSON-ID /*.01U008 A008 .
+0031      (AD=ODT )
+0032/
+0033 001T '~' (072)
+0034/
+0035 001T 'LEAVE TAKEN:'
+0036 015T #TAKEN /*.01U002 N02.0.
+0037      (AD=ODT )
+0038/
+0039 001T 'LEAVE DUE: '
+0040 015T #DUE /*.01U002 N02.0.
+0041      (AD=ODT )
+0042/
+0043 001T 'LEAVE LEFT:'
+0044 015T #LEFT /*.01U008 B004 .
+0045      (AD=ODT )
+0046/
+0047 001T '~' (071)
+0048/
+0049 001T 'LEAVE START DATE: '
+0050 019T #START /*.99U008 A008 .
+0051      (AD=MDT )
+0052/
+0053 001T 'LEAVE END DATE: '
+0054 019T #END /*.99U008 A008 .
+0055      (AD=MDT )
+0056/
+0057/
+0058/
+0059/
+0060/
+0061/
+0062/
+0063/
+0064/
+0065/
+0066/
+0067/
+0068/
+0069/
+0070* MAP2: VALIDATION *****************************************************
+0071* MAP2: END OF MAP *****************************************************
+0072END

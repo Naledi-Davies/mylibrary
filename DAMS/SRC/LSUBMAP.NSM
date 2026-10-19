@@ -1,0 +1,121 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     #CV-IMPOUNDS #CV-LOCALE #CV-NAME-DAM #CV-PROVINCE #CV-RESEVOIR-VOL
+0004*     #CV-SURFACE-AREA #CV-WALL-HEIGHT #CV-YEAR-COMPLETED DAMSA.ALT-NAMES DAMSA.DAM-ID
+0005*     DAMSA.IMPOUNDS DAMSA.LOCALE DAMSA.NAME-DAM DAMSA.PROVINCE DAMSA.RESEVOIR-VOL
+0006*     DAMSA.SURFACE-AREA DAMSA.WALL-HEIGHT DAMSA.YEAR-COMPLETED
+0007DEFINE DATA PARAMETER
+00081  #CV-IMPOUNDS (C)
+00091  #CV-LOCALE (C)
+00101  #CV-NAME-DAM (C)
+00111  #CV-PROVINCE (C)
+00121  #CV-RESEVOIR-VOL (C)
+00131  #CV-SURFACE-AREA (C)
+00141  #CV-WALL-HEIGHT (C)
+00151  #CV-YEAR-COMPLETED (C)
+00161 DAMSA.ALT-NAMES (A050)
+00171 DAMSA.DAM-ID (A005)
+00181 DAMSA.IMPOUNDS (A050)
+00191 DAMSA.LOCALE (A050)
+00201 DAMSA.NAME-DAM (A050)
+00211 DAMSA.PROVINCE (A050)
+00221 DAMSA.RESEVOIR-VOL (N10.0)
+00231 DAMSA.SURFACE-AREA (N03.3)
+00241 DAMSA.WALL-HEIGHT (N04.3)
+00251 DAMSA.YEAR-COMPLETED (N04.0)
+0026END-DEFINE
+0027FORMAT PS=024 LS=080 ZP=OFF SG=OFF KD=OFF IP=OFF
+0028* MAP2: MAP PROFILES *****************************        200***********
+0029* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(                       *
+0030* 024079        N0NNUCN             X ^      01 SYSPROF NR             *
+0031************************************************************************
+0032INPUT          (     IP=OFF                                           /*
+0033                                                                       )
+0034 001T *PROGRAM /*.01S010 A008 .
+0035      (AD=OIT CD=TU AL=010 )
+0036 022T 'INFORMATION OF DAMS IN SOUTH AFRICA '(BLU)
+0037 071T *TIME /*.01S008 A010 .
+0038      (AD=OIT CD=TU AL=008 )
+0039/
+0040 071T *DATE /*.01S008 A008 .
+0041      (AD=OIT CD=TU )
+0042/
+0043/
+0044/
+0045 001T '.' (079)
+0046/
+0047 001T 'DAM ID: '
+0048 012T DAMSA.DAM-ID /*.01V014 A005 .
+0049      (AD=ODRT AL=014 )
+0050/
+0051 001T 'DAM NAME:'
+0052 012T DAMSA.NAME-DAM /*.99V059 A050 .
+0053      (AD=MDLT AL=059 CV=#CV-NAME-DAM )
+0054/
+0055 001T '.' (079)
+0056/
+0057 001T 'PROVINCE:'
+0058 012T DAMSA.PROVINCE /*.99V059 A050 .
+0059      (AD=MDLT AL=059 CV=#CV-PROVINCE )
+0060/
+0061 001T 'LOCALE:'
+0062 012T DAMSA.LOCALE /*.99V059 A050 .
+0063      (AD=MDLT AL=059 CV=#CV-LOCALE )
+0064/
+0065 001T 'IMPOUND:'
+0066 012T DAMSA.IMPOUNDS /*.99V059 A050 .
+0067      (AD=MDLT AL=059 CV=#CV-IMPOUNDS )
+0068/
+0069 001T '.' (079)
+0070/
+0071 001T 'YEAR COMPLETED:'
+0072 018T DAMSA.YEAR-COMPLETED /*.99V023 N04.0.
+0073      (AD=MDLT NL=23.0 CV=#CV-YEAR-COMPLETED )
+0074/
+0075 001T '.' (079)
+0076/
+0077 001T 'RESEVOIR VOLUME:'
+0078 018T DAMSA.RESEVOIR-VOL /*.99V020 N10.0.
+0079      (AD=MDLT NL=20.0 CV=#CV-RESEVOIR-VOL )
+0080/
+0081 001T 'SURFACE AREA:'
+0082 018T DAMSA.SURFACE-AREA /*.99V007 N03.3.
+0083      (AD=MDLT EM=999.999 CV=#CV-SURFACE-AREA )
+0084/
+0085 001T 'WALL HEIGHT:'
+0086 018T DAMSA.WALL-HEIGHT /*.99V008 N04.3.
+0087      (AD=MDLT EM=9999.999 CV=#CV-WALL-HEIGHT )
+0088/
+0089 001T '.' (079)
+0090/
+0091 001T 'ALTERNATE INFORMATION:'
+0092 025T DAMSA.ALT-NAMES /*.01V018 A050 .
+0093      (AD=ODRT AL=018 )
+0094/
+0095/
+0096/
+0097/
+0098/
+0099* MAP2: VALIDATION *****************************************************
+0100RULEVAR D01DAMSA.DAM-ID                                                     
+0101* CDIR DAMSA                            DAM-ID                          ;
+0102RULEVAR D01DAMSA.NAME-DAM                                                   
+0103INCDIR DAMSA                            NAME-DAM                        ;
+0104RULEVAR D01DAMSA.PROVINCE                                                   
+0105INCDIR DAMSA                            PROVINCE                        ;
+0106RULEVAR D01DAMSA.LOCALE                                                     
+0107INCDIR DAMSA                            LOCALE                          ;
+0108RULEVAR D01DAMSA.IMPOUNDS                                                   
+0109INCDIR DAMSA                            IMPOUNDS                        ;
+0110RULEVAR D01DAMSA.YEAR-COMPLETED                                             
+0111INCDIR DAMSA                            YEAR-COMPLETED                  ;
+0112RULEVAR D01DAMSA.RESEVOIR-VOL                                               
+0113INCDIR DAMSA                            RESEVOIR-VOL                    ;
+0114RULEVAR D01DAMSA.SURFACE-AREA                                               
+0115INCDIR DAMSA                            SURFACE-AREA                    ;
+0116RULEVAR D01DAMSA.WALL-HEIGHT                                                
+0117INCDIR DAMSA                            WALL-HEIGHT                     ;
+0118RULEVAR D01DAMSA.ALT-NAMES                                                  
+0119* CDIR DAMSA                            ALT-NAMES                       ;
+0120* MAP2: END OF MAP *****************************************************
+0121END

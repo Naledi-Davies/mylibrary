@@ -1,0 +1,54 @@
+0001DB: 012 FILE: 011  - EMPLOYEE                         DEFAULT SEQUENCE: 
+0002TYPE: ADABAS 
+0003 
+0004T L DB Name                              F Leng  S D Remark
+0005- - -- --------------------------------  - ----  - - ------------------------
+0006  1 AA AA-1                              A    8    D 
+0007G 1 AB AB-1                                          
+0008  2 AC AC-1                              A   20  N   
+0009  2 AE AE-1                              A   20    D 
+0010  2 AD AD-1                              A   20  N   
+0011  1 AF AF-1                              A    1  F   
+0012  1 AG AG-1                              A    1  F   
+0013  1 AH AH-1                              P    7  N D NC
+0014  1 AH N@AH-1                            I    2    D INDICATOR OF AH-1
+0015G 1 A1 A1-1                                          
+0016M 2 AI AI-1                              A   20  N   
+0017  2 AJ AJ-1                              A   20  N D 
+0018  2 AK AK-1                              A   10  N   
+0019  2 AL AL-1                              A    3  N   
+0020G 1 A2 A2-1                                          
+0021  2 AN AN-1                              A    6  N   
+0022  2 AM AM-1                              A   15  N   
+0023  1 AO AO-1                              A    6    D 
+0024  1 AP AP-1                              A   25  N D 
+0025P 1 AQ AQ-1                                          
+0026  2 AR AR-1                              A    3  N   
+0027  2 AS AS-1                              P    9  N   
+0028M 2 AT AT-1                              P    9  N   
+0029G 1 A3 A3-1                                          
+0030  2 AU AU-1                              N    2      
+0031  2 AV AV-1                              N    2  N   
+0032P 1 AW AW-1                                          
+0033  2 AX AX-1                              N    8  N   
+0034  2 AY AY-1                              N    8  N   
+0035M 1 AZ AZ-1                              A    3  N D 
+0036  1 PH PH-1                              A   20    P 
+0037*      -------- SOURCE FIELD(S) -------
+0038*      AE-1
+0039  1 H1 H1-1                              B    4  N S 
+0040*      -------- SOURCE FIELD(S) -------
+0041*      AU-1(1-2)
+0042*      AV-1(1-2)
+0043  1 S1 S1-1                              A    4    U 
+0044*      -------- SOURCE FIELD(S) -------
+0045*      AO-1(1-4)
+0046  1 S2 S2-1                              A   26    S 
+0047*      -------- SOURCE FIELD(S) -------
+0048*      AO-1(1-6)
+0049*      AE-1(1-20)
+0050P 1 S3 S3-1                              A   12    S 
+0051*      -------- SOURCE FIELD(S) -------
+0052*      AR-1(1-3)
+0053*      AS-1(1-9)
+0054******DDM OUTPUT TERMINATED******

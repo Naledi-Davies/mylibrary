@@ -1,0 +1,64 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     #CV-DEPARTMENT #CV-JOB-TITLE #DEPARTMENT #JOB-TITLE #PERSON-ID #PROGRAM
+0004DEFINE DATA PARAMETER
+00051  #CV-DEPARTMENT (C)
+00061  #CV-JOB-TITLE (C)
+00071 #DEPARTMENT (A004)
+00081 #JOB-TITLE (A025)
+00091 #PERSON-ID (A008)
+00101 #PROGRAM (A008)
+0011END-DEFINE
+0012FORMAT PS=024 LS=080 ZP=OFF SG=OFF KD=OFF IP=OFF
+0013* MAP2: MAP PROFILES *****************************        200***********
+0014* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(                       *
+0015* 024079        N0NNUCN             X ^      01 SYSPROF NR             *
+0016************************************************************************
+0017INPUT          (     IP=OFF                                           /*
+0018                                                                       )
+0019 001T *PROGRAM /*.01S011 A008 .
+0020      (AD=ODT AL=011 )
+0021 013T 'COMPANY INFORMATION'
+0022 033T *DATN /*.01S007 N08.0.
+0023      (AD=ODT NL=07.0 )
+0024 041T *TIME /*.01S007 A010 .
+0025      (AD=ODT AL=007 )
+0026 049T #PROGRAM /*.01D010 A008 .
+0027      (AD=ODRT AL=010 )
+0028/
+0029 001T '************************************************************'-
+0030      '********** '
+0031/
+0032 001T 'PERSONNEL-ID:'
+0033 015T #PERSON-ID /*.01U008 A008 .
+0034      (AD=ODT )
+0035/
+0036 001T 'DEPARTMENT:'
+0037 015T #DEPARTMENT /*.99U004 A004 .
+0038      (AD=MDT CV=#CV-DEPARTMENT )
+0039/
+0040 001T 'JOB TITLE: '
+0041 015T #JOB-TITLE /*.99U025 A025 .
+0042      (AD=MDT CV=#CV-JOB-TITLE )
+0043/
+0044/
+0045/
+0046/
+0047/
+0048/
+0049/
+0050/
+0051/
+0052/
+0053/
+0054/
+0055/
+0056/
+0057/
+0058/
+0059/
+0060/
+0061/
+0062* MAP2: VALIDATION *****************************************************
+0063* MAP2: END OF MAP *****************************************************
+0064END

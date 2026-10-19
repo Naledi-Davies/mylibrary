@@ -1,0 +1,45 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     #SELECT-HELP(*)
+0004DEFINE DATA PARAMETER
+00051 #SELECT-HELP (A001/00001:00003)
+0006END-DEFINE
+0007FORMAT PS=012 LS=039 ZP=OFF SG=OFF KD=OFF IP=OFF
+0008* MAP2: MAP PROFILES *****************************        200***********
+0009* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(                       *
+0010* 012038        N0NNUCN             X ^      01 SYSPROF NR             *
+0011************************************************************************
+0012INPUT          (     IP=OFF                                           /*
+0013                                                                       )
+0014 001T *PROGRAM /*.01S011 A008 .
+0015      (AD=ODT CD=GR AL=011 )
+0016 014T ' MENU HELP '(PII)
+0017 030T *TIME /*.01S007 A010 .
+0018      (AD=ODT CD=GR AL=007 )
+0019/
+0020 030T *DATE /*.01S007 A008 .
+0021      (AD=ODT CD=GR AL=007 )
+0022/
+0023/
+0024/
+0025 002T 'SELECT BELOW '
+0026/
+0027/
+0028 003T #SELECT-HELP (1) /*.99U001 A001 .
+0029      (AD=MDT )
+0030   /**A1000030000100001000010000100001100003001001001001000HV
+0031 005T 'VIEW EXISTING MAPS (PRESS L) '
+0032/
+0033/
+0034 003T #SELECT-HELP (2) /*.99U001 A001 .
+0035      (AD=MDT )
+0036 005T 'VIEW DAM STATISTICS (PRESS S) '
+0037/
+0038/
+0039 003T #SELECT-HELP (3) /*.99U001 A001 .
+0040      (AD=MDT )
+0041 005T 'ADD A NEW MAP (PRESS A) '
+0042/
+0043* MAP2: VALIDATION *****************************************************
+0044* MAP2: END OF MAP *****************************************************
+0045END

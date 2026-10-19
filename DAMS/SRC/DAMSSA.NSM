@@ -1,0 +1,65 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     DAM-ID NAME-DAM RESEVOIR-VOL SURFACE-AREA WALL-HEIGHT
+0004DEFINE DATA PARAMETER
+00051 DAM-ID (A003)
+00061 NAME-DAM (A050)
+00071 RESEVOIR-VOL (N12.0)
+00081 SURFACE-AREA (N12.3)
+00091 WALL-HEIGHT (N08.2)
+0010END-DEFINE
+0011FORMAT PS=024 LS=080 ZP=OFF SG=OFF KD=OFF IP=OFF
+0012* MAP2: MAP PROFILES *****************************        200***********
+0013* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(                       *
+0014* 024079        N0NNUCN             X ^      01 SYSPROF NR             *
+0015************************************************************************
+0016INPUT          (     IP=OFF                                           /*
+0017                                                                       )
+0018 001T *PROGRAM /*.01S010 A008 .
+0019      (AD=OIT CD=YE AL=010 )
+0020 018T 'DAMS IN SOUTH AFRICA '(I)
+0021 050T *TIME /*.01S008 A010 .
+0022      (AD=OIT CD=YE AL=008 )
+0023/
+0024 050T *DATE /*.01S008 A008 .
+0025      (AD=OIT CD=YE )
+0026/
+0027/
+0028 002T 'DAM-ID '
+0029 018T 'NAME-DAM '
+0030 033T 'RESEVOIR-VOL '
+0031 049T 'SURFACE-AREA '
+0032 064T 'WALL-HEIGHT'
+0033/
+0034 002T DAM-ID /*.99D003 A003 .
+0035      (AD=MDRT )
+0036 016T NAME-DAM /*.99D012 A050 .
+0037      (AD=MDRT AL=012 )
+0038 033T RESEVOIR-VOL /*.99D012 N12.0.
+0039      (AD=MDRT )
+0040 049T SURFACE-AREA /*.99D014 N12.3.
+0041      (AD=MDRT NL=14.0 )
+0042 067T WALL-HEIGHT /*.99D011 N08.2.
+0043      (AD=MDRT )
+0044/
+0045/
+0046/
+0047/
+0048/
+0049/
+0050/
+0051/
+0052/
+0053/
+0054/
+0055/
+0056/
+0057/
+0058/
+0059/
+0060/
+0061/
+0062/
+0063* MAP2: VALIDATION *****************************************************
+0064* MAP2: END OF MAP *****************************************************
+0065END

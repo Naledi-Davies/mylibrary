@@ -1,0 +1,15 @@
+0001DB: 023 FILE: 023  - WATER                            DEFAULT SEQUENCE: 
+0002TYPE: ADABAS 
+0003 
+0004T L DB Name                              F Leng  S D Remark 
+0005- - -- --------------------------------  - ----  - - -------------------- 
+0006  1 AA DAM-ID                            A   20    D 
+0007  1 AB NAME                              A   40    D 
+0008  1 AC CITY                              A   30 
+0009  1 AD PROVINCE                          A   20 
+0010  1 AE IMPOUND                           A   20 
+0011  1 AF YEAR-DONE                         N  5.0 
+0012  1 AG RES-VOL                           N 15.0 
+0013  1 AH SURF-AREA                         N  5.0 
+0014  1 AI HEIGHT                            N 10.0 
+0015******DDM OUTPUT TERMINATED****** 

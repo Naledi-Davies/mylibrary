@@ -1,0 +1,16 @@
+0001DB: 023 FILE: 014  - DAMSA                            DEFAULT SEQUENCE: 
+0002TYPE: ADABAS 
+0003 
+0004T L DB Name                              F Leng  S D Remark 
+0005- - -- --------------------------------  - ----  - - -------------------- 
+0006  1 AA DAM-ID                            A    5    D 
+0007  1 AB NAME-DAM                          A   50    D 
+0008  1 AC LOCALE                            A   50 
+0009  1 AD PROVINCE                          A   50 
+0010  1 AE IMPOUNDS                          A   50 
+0011  1 AF ALT-NAMES                         A   50 
+0012  1 AG YEAR-COMPLETED                    N  4.0 
+0013  1 AH RESEVOIR-VOL                      N 10.0 
+0014  1 AI SURFACE-AREA                      N  3.3 
+0015  1 AJ WALL-HEIGHT                       N  4.3 
+0016******DDM OUTPUT TERMINATED****** 
