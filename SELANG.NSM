@@ -1,0 +1,77 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     #SELECT(*)
+0004DEFINE DATA PARAMETER
+00051 #SELECT (A001/00001:00012)
+0006END-DEFINE
+0007FORMAT PS=024 LS=080 ZP=OFF SG=OFF KD=OFF IP=OFF
+0008* MAP2: MAP PROFILES *****************************        200***********
+0009* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(   00000               *
+0010* 024079        N0NNUCN             X ^      01 SYSPROF NRH            *
+0011************************************************************************
+0012INPUT          (     IP=OFF                                           /*
+0013                                                                       )
+0014/
+0015/
+0016 002T 'SELECT WITH USING ''X''                                     '(REI)
+0017/
+0018 015T #SELECT (1) /*.99U001 A001 .
+0019      (AD=MDT )
+0020   /**A1000120000100001000010000100001100012001001000001000HV
+0021 018T 'ENGLISH      '
+0022/
+0023 015T #SELECT (2) /*.99U001 A001 .
+0024      (AD=MDT )
+0025 018T 'AFRIKAANS '
+0026/
+0027 015T #SELECT (3) /*.99U001 A001 .
+0028      (AD=MDT )
+0029 018T 'ISINDEBELE'
+0030/
+0031 015T #SELECT (4) /*.99U001 A001 .
+0032      (AD=MDT )
+0033 018T 'ISIXHOSA'
+0034/
+0035 015T #SELECT (5) /*.99U001 A001 .
+0036      (AD=MDT )
+0037 018T 'ISIZULU  '
+0038/
+0039 015T #SELECT (6) /*.99U001 A001 .
+0040      (AD=MDT )
+0041 018T 'SEPEDI  '
+0042/
+0043 015T #SELECT (7) /*.99U001 A001 .
+0044      (AD=MDT )
+0045 018T 'SESOTHO    '
+0046/
+0047 015T #SELECT (8) /*.99U001 A001 .
+0048      (AD=MDT )
+0049 018T 'SETSWANA  '
+0050/
+0051 015T #SELECT (9) /*.99U001 A001 .
+0052      (AD=MDT )
+0053 018T 'SISWATI '
+0054/
+0055 015T #SELECT (10) /*.99U001 A001 .
+0056      (AD=MDT )
+0057 018T 'TSHIVENDA '
+0058/
+0059 015T #SELECT (11) /*.99U001 A001 .
+0060      (AD=MDT )
+0061 018T 'XISTONGA '
+0062/
+0063 015T #SELECT (12) /*.99U001 A001 .
+0064      (AD=MDT )
+0065 018T 'SOUTH AFRICAN SIGN LANGUAGE '
+0066/
+0067/
+0068/
+0069/
+0070/
+0071/
+0072/
+0073/
+0074/
+0075* MAP2: VALIDATION *****************************************************
+0076* MAP2: END OF MAP *****************************************************
+0077END

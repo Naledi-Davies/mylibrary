@@ -1,0 +1,30 @@
+0001/** New Program REPEAT.
+0002/**
+0003/** :author tda
+0004/* TODO Enter your code here
+0005DEFINE DATA LOCAL                                                       
+00061 #DATEX (D)                                                     
+00071 #DATEY (A18) INIT <'2026-06-12'> 
+00081 #DATE (D)                                                     
+0009END-DEFINE                                                              
+0010*
+0011MOVE *DATX TO #DATEX
+0012MOVE EDITED #DATEY TO #DATE(EM=YYYY-MM-DD)
+0013*                                                                      
+0014REPEAT /**WHILE #X <= 5  
+0015  ADD 1 TO #DATEX                                                        
+0016  WRITE '=' #DATEX  (EM=YYYY-MM-DD)
+0017  UNTIL #DATEX = #DATE
+0018END-REPEAT 
+0019END
+0020* DEFINE DATA LOCAL
+0021* 1 #X (I1) INIT <0>                                                      
+0022* 1 #Y (I1) INIT <0>                                                      
+0023* END-DEFINE                                                              
+0024* *                                                                                                                                        
+0025* REPEAT                                                             
+0026*   ADD 1 TO #Y                                                           
+0027*   WRITE '=' #Y
+0028*   UNTIL #Y = 6                                                          
+0029* END-REPEAT  
+0030* END

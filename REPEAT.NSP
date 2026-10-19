@@ -1,0 +1,14 @@
+0001/** New Program REPEAT.
+0002/**
+0003/** :author tda
+0004/* TODO Enter your code here
+0005DEFINE DATA LOCAL                                                       
+00061 #X (N1) INIT <0>                                                     
+00071 #Y (N1) INIT <0>                                                      
+0008END-DEFINE                                                              
+0009*                                                                       
+0010REPEAT WHILE #X <= 5                                              
+0011  ADD 1 TO #X                                                           
+0012  WRITE '=' #X                                                  
+0013END-REPEAT  
+0014END

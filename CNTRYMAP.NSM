@@ -1,0 +1,62 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     #SELECT(*)
+0004DEFINE DATA PARAMETER
+00051 #SELECT (A001/00001:00007)
+0006END-DEFINE
+0007FORMAT PS=024 LS=080 ZP=OFF SG=OFF KD=OFF IP=OFF
+0008* MAP2: MAP PROFILES *****************************        200***********
+0009* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(   00000               *
+0010* 024079        N0NNUCN             X ^      01 SYSPROF NRH            *
+0011************************************************************************
+0012INPUT          (     IP=OFF                                           /*
+0013                                                                       )
+0014/
+0015/
+0016 002T 'SELECT WITH USING THE FIRST LETTER OF YOUR COUNTRY''S NAME '(REI)
+0017/
+0018 015T #SELECT (1) /*.99U001 A001 .
+0019      (AD=MDT )
+0020   /**A1000070000100001000010000100001100007001001000001000HV
+0021 018T 'SOUTH AFRICA '
+0022/
+0023 015T #SELECT (2) /*.99U001 A001 .
+0024      (AD=MDT )
+0025 018T 'ZIMBABWE'
+0026/
+0027 015T #SELECT (3) /*.99U001 A001 .
+0028      (AD=MDT )
+0029 018T 'BOSTWANA '
+0030/
+0031 015T #SELECT (4) /*.99U001 A001 .
+0032      (AD=MDT )
+0033 018T 'NAMIBIA '
+0034/
+0035 015T #SELECT (5) /*.99U001 A001 .
+0036      (AD=MDT )
+0037 018T 'ESWATINI '
+0038/
+0039 015T #SELECT (6) /*.99U001 A001 .
+0040      (AD=MDT )
+0041 018T 'LESOTHO '
+0042/
+0043 015T #SELECT (7) /*.99U001 A001 .
+0044      (AD=MDT )
+0045 018T 'MOZAMBIQUE '
+0046/
+0047/
+0048/
+0049/
+0050/
+0051/
+0052/
+0053/
+0054/
+0055/
+0056/
+0057/
+0058/
+0059/
+0060* MAP2: VALIDATION *****************************************************
+0061* MAP2: END OF MAP *****************************************************
+0062END
