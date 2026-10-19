@@ -1,0 +1,32 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     #CHOOSE(*)
+0004DEFINE DATA PARAMETER
+00051 #CHOOSE (A001/00001:00002)
+0006END-DEFINE
+0007FORMAT PS=008 LS=041 ZP=OFF SG=OFF KD=OFF IP=OFF
+0008* MAP2: MAP PROFILES *****************************        200***********
+0009* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(   00000               *
+0010* 008040        N0NNUCN             X ^      01 SYSPROF NRH            *
+0011************************************************************************
+0012INPUT          (     IP=OFF                                           /*
+0013                                                                       )
+0014 004T 'Enter your gender                    '
+0015/
+0016 004T 'CHOOSE '
+0017/
+0018 007T #CHOOSE (1) /*.99U001 A001 .
+0019      (AD=ADT )
+0020   /**A1000020000100001000010000100001100002001001000001000HV
+0021 009T 'F-female  '
+0022/
+0023 007T #CHOOSE (2) /*.99U001 A001 .
+0024      (AD=ADT )
+0025 009T 'M-male    '
+0026/
+0027/
+0028/
+0029/
+0030* MAP2: VALIDATION *****************************************************
+0031* MAP2: END OF MAP *****************************************************
+0032END

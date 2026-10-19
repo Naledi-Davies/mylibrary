@@ -1,0 +1,55 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     FIRST-NAME MAR-STAT NAME PERSONNEL-ID
+0004DEFINE DATA PARAMETER
+00051 FIRST-NAME (A020)
+00061 MAR-STAT (A001)
+00071 NAME (A020)
+00081 PERSONNEL-ID (A008)
+0009END-DEFINE
+0010FORMAT PS=024 LS=080 ZP=OFF SG=OFF KD=OFF IP=OFF
+0011* MAP2: MAP PROFILES *****************************        200***********
+0012* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(                       *
+0013* 024079        N0NNUCN             X ^      01 SYSPROF NR             *
+0014************************************************************************
+0015INPUT          (     IP=OFF                                           /*
+0016                                                                       )
+0017/
+0018 002T 'DETAILS UPDATE  '
+0019/
+0020/
+0021 002T 'PERSONNEL-ID:'
+0022 017T PERSONNEL-ID /*.01D008 A008 .
+0023      (AD=ODRT )
+0024/
+0025 002T 'NAME:'
+0026 017T FIRST-NAME /*.99D020 A020 .
+0027      (AD=MDRT )
+0028/
+0029 002T 'SURNAME:    '
+0030 017T NAME /*.99D020 A020 .
+0031      (AD=MDRT )
+0032/
+0033/
+0034 002T 'MARITAL STATUS:'
+0035 017T MAR-STAT /*.99U001 A001 .
+0036      (AD=MDRT HE='WK36HR' )
+0037/
+0038/
+0039/
+0040/
+0041/
+0042/
+0043/
+0044/
+0045/
+0046/
+0047/
+0048/
+0049/
+0050/
+0051/
+0052/
+0053* MAP2: VALIDATION *****************************************************
+0054* MAP2: END OF MAP *****************************************************
+0055END

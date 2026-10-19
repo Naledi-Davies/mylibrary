@@ -1,0 +1,85 @@
+0001* MAP2: PROTOTYPE VERSION 820 --- CREATED BY ONE 9.3.1 ---
+0002* INPUT USING MAP 'XXXXXXXX'
+0003*     #EXIT EMPLOYEES.CITY EMPLOYEES.FIRST-NAME EMPLOYEES.LANG(*)
+0004*     EMPLOYEES.NAME EMPLOYEES.PERSONNEL-ID
+0005DEFINE DATA PARAMETER
+00061 #EXIT (A009)
+00071 EMPLOYEES.CITY (A020)
+00081 EMPLOYEES.FIRST-NAME (A020)
+00091 EMPLOYEES.LANG (A003/00001:00005)
+00101 EMPLOYEES.NAME (A020)
+00111 EMPLOYEES.PERSONNEL-ID (A008)
+0012END-DEFINE
+0013FORMAT PS=024 LS=080 ZP=OFF SG=OFF KD=OFF IP=OFF
+0014* MAP2: MAP PROFILES *****************************        200***********
+0015* .TTAAAMMOO   D I D I N D I D I        ?_)^&:+(                       *
+0016* 024079        N0NNUCN             X ^      01 SYSPROF NR             *
+0017************************************************************************
+0018INPUT          (     IP=OFF                                           /*
+0019                                                                       )
+0020/
+0021/
+0022 003T 'MAP WITH ARRAY       '
+0023/
+0024/
+0025 004T 'PERS-ID '
+0026 021T EMPLOYEES.PERSONNEL-ID /*.01V008 A008 .
+0027      (AD=ODT )
+0028/
+0029 004T 'FIRST-NAME'
+0030 021T EMPLOYEES.FIRST-NAME /*.01V020 A020 .
+0031      (AD=ODT )
+0032/
+0033 004T 'NAME'
+0034 021T EMPLOYEES.NAME /*.01V020 A020 .
+0035      (AD=ODT )
+0036/
+0037 004T 'CITY'
+0038 021T EMPLOYEES.CITY /*.01V020 A020 .
+0039      (AD=ODT )
+0040/
+0041 004T 'LANG(1)'
+0042 021T EMPLOYEES.LANG (1) /*.01U003 A003 .
+0043      (AD=ODT )
+0044   /**A1000050000100001000010000100001100005001001000001000HV
+0045/
+0046 004T 'LANG(2)'
+0047 021T EMPLOYEES.LANG (2) /*.01U003 A003 .
+0048      (AD=ODT )
+0049/
+0050 004T 'LANG(3)'
+0051 021T EMPLOYEES.LANG (3) /*.01U003 A003 .
+0052      (AD=ODT )
+0053/
+0054 004T 'LANG(4)'
+0055 021T EMPLOYEES.LANG (4) /*.01U003 A003 .
+0056      (AD=ODT )
+0057/
+0058 004T 'LANG(5)'
+0059 021T EMPLOYEES.LANG (5) /*.01U003 A003 .
+0060      (AD=ODT )
+0061/
+0062/
+0063 004T 'PRESS ''A'' TO EXIT '
+0064 023T #EXIT /*.99U002 A009 .
+0065      (AD=MDT AL=002 )
+0066/
+0067/
+0068/
+0069/
+0070/
+0071/
+0072/
+0073/
+0074/
+0075* MAP2: VALIDATION *****************************************************
+0076RULEVAR D01EMPLOYEES.PERSONNEL-ID                                           
+0077* CDIR EMPLOYEES                        PERSONNEL-ID                    ;
+0078RULEVAR D01EMPLOYEES.FIRST-NAME                                             
+0079* CDIR EMPLOYEES                        FIRST-NAME                      ;
+0080RULEVAR D01EMPLOYEES.NAME                                                   
+0081* CDIR EMPLOYEES                        NAME                            ;
+0082RULEVAR D01EMPLOYEES.CITY                                                   
+0083* CDIR EMPLOYEES                        CITY                            ;
+0084* MAP2: END OF MAP *****************************************************
+0085END
