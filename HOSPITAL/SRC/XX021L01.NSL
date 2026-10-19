@@ -1,0 +1,18 @@
+0001**DV          0        V1PATIENT                         PATIENT
+0002**DD          0   N 7.0 2PATIENT-ID
+0003**DR          0        R2PATIENT-ID                      /* BEGIN REDEFINE: PATIENT-ID
+0004**DFR         0   A   2 3#V-YY
+0005**DFR         0   N   5 3#V-NUMBER
+0006**DD          0   A  20 2FIRST-NAME
+0007**DD          0   A  20 2SURNAME
+0008**DD          0   N 6.0 2DOB
+0009**DR          0        R2DOB                             /* BEGIN REDEFINE: DOB
+0010**DFR         0   A   6 3#V-DOB
+0011**DD I1 C     0   A  30M2ADDRESS                         (1:4)
+0012**DD          0   A  20 2ARRIVED
+0013**DR          0        R2ARRIVED                         /* BEGIN REDEFINE: ARRIVED
+0014**DFRI1       0   A   1 3#V-VAL                          (1:20)
+0015**DD          0   A   6 2DUE-FOR-SURGERY
+0016**DR          0        R2DUE-FOR-SURGERY                 /* BEGIN REDEFINE: DUE-FOR-SU
+0017**DFR         0   N   6 3#V-DUE-FOR-SURGERY-NUMERIC
+0018**DD          0   D     2RELEASED

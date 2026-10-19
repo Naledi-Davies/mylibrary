@@ -1,0 +1,9 @@
+0001**DV          0        V1PATIENT-UPDATE                  PATIENT
+0002**DD          0   N 7.0 2PATIENT-ID
+0003**DD          0   A  20 2FIRST-NAME
+0004**DD          0   A  20 2SURNAME
+0005**DD          0   N 6.0 2DOB
+0006**DD I1 C     0   A  30M2ADDRESS                         (1:4)
+0007**DD          0   A  20 2ARRIVED
+0008**DD          0   A   6 2DUE-FOR-SURGERY
+0009**DD          0   D     2RELEASED
